@@ -1,9 +1,15 @@
+// Gradle Settings configuration file for Card Studio project.
+// Configures plugin repositories, dependency resolution modes, and project modules.
+
 pluginManagement {
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
     }
+}
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -12,5 +18,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Greeting Card"
+
+// Project root name and subproject module inclusions
+rootProject.name = "Card Studio"
 include ':app'

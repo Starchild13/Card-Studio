@@ -1,3 +1,8 @@
+/**
+ * Typography specifications for Card Studio.
+ *
+ * Configures default text styles and font specifications across the app.
+ */
 package com.starchild13.greetingcard.ui.theme
 
 import androidx.compose.material.Typography
@@ -6,8 +11,13 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Set of Material typography styles to start with
+/**
+ * Application Material typography configurations.
+ *
+ * Specifies base text styling for body text, titles, buttons, and captions.
+ */
 val Typography = Typography(
+    /** Default body1 text style used for body messages and descriptions. */
     body1 = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
